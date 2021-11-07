@@ -12,9 +12,20 @@ body {
   overflow: hidden;
 }
 
+h1{
+  text-align: center;
+  margin-bottom: 20px;
+  width: auto;
+  color: #F3D34A;
+  background-color: #333;
+  padding: 10px;
+  border-bottom: 5px solid rgba(243, 211, 74, 0.7);
+  border-radius: 5px;  
+}
+
 .container {
   display: grid;
-  margin: 3em;
+  margin: 30px auto;
 }
 
 .memory-game {
@@ -80,4 +91,41 @@ body {
 .btn:hover {
    background: #F3D34A; 
    color: #555;
+}
+
+@media screen and (max-width: 992px) {
+
+  .memory-game {
+    width: 560px;
+    height: 560px;
+  }
+
+  .btn {
+    font-size: medium;
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  .memory-game {
+    width: 420px;
+    height: 420px;
+  }
+
+  .btn {
+    font-size: small;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+
+  .memory-game {
+    width: 320px;
+    height: 320px;
+  }
+
+  .btn {
+    font-size: xx-small;
+  }
 }
